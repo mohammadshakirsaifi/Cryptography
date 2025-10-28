@@ -94,7 +94,7 @@ vault write pki/issue/demo-dot-com common_name="host.demo.com" ttl=24h
 - [Microsoft ADCS Documentation](https://docs.microsoft.com/en-us/windows-server/identity/ad-fs/ad-cs/active-directory-certificate-services-overview)
 - [HashiCorp Vault PKI Secrets Engine](https://developer.hashicorp.com/vault/docs/secrets/pki)
 - [EJBCA Documentation](https://www.ejbca.org/docs/)
-- [Venafi Product Overview](https://www.venafi.com/
+- [Venafi Product Overview](https://www.venafi.com/)
 
 #### ✅ This file now contains:  
 - OpenSSL CA workflow
