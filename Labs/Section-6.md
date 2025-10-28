@@ -37,8 +37,7 @@ graph TD
   KeyOps --> Create[Create Key (vtl createKey)]
   KeyOps --> List[List Keys (vtl listKeys)]
   KeyOps --> Delete[Delete Key (vtl deleteKey)]
-
----
+```
 ---
 
 ## Thales Luna HSM
