@@ -102,10 +102,10 @@ print("SHA3-256:", hash_object.hexdigest())
 
 #### 📘 References
 
-   - NIST SHA-2 Standard (FIPS PUB 180-4)
-   - NIST SHA-3 Standard (FIPS PUB 202)
-   - Python hashlib Documentation
-   - OpenSSL dgst Command Reference
+- [ NIST SHA-2 Standard (FIPS PUB 180-4)] https://csrc.nist.gov/publications/detail/fips/180/4/final
+- [ NIST SHA-3 Standard (FIPS PUB 202)] https://csrc.nist.gov/publications/detail/fips/202/final
+- [ Python hashlib Documentation] https://docs.python.org/3/library/hashlib.html
+- [ OpenSSL dgst Command Reference] https://www.openssl.org/docs/manmaster/man1/openssl-dgst.html
 
 
 ---
