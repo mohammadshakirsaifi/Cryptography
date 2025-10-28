@@ -29,7 +29,21 @@ HSM Cluster (login via `cloudhsm_mgmt_util loginHSM`)
 Key Operations
   ├── Generate Key (`cloudhsm_mgmt_util genKey`)
   └── Other management operations
+---
+graph TD
+  Client --> Partition[Partition (login via `vtl login -n <partition_name>`)]
+  Partition --> KeyOps[Key Operations]
+  KeyOps --> Create[Create Key (`vtl createKey`)]
+  KeyOps --> List[List Keys (`vtl listKeys`)]
+  KeyOps --> Delete[Delete Key (`vtl deleteKey`)]
+---
 
+graph TD
+  Client (within VPC/network) --> HSM Cluster (login via `cloudhsm_mgmt_util loginHSM`)]
+  Partition --> KeyOps[Key Operations]
+  KeyOps --> Create[Generate Key (`cloudhsm_mgmt_util genKey`)]
+  KeyOps --> List[Other management operations]
+  ---
 ---
 
 ## Thales Luna HSM
