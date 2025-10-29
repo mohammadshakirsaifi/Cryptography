@@ -13,6 +13,7 @@ graph TD
     B --> C[Create CSR (user.csr)]
     C --> D[Send to CA (ca.crt & ca.key)]
     D --> E[Receive Signed Certificate (user.crt)]
+```
 ---
 
 ## Python Automation
