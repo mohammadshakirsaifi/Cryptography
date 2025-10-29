@@ -5,16 +5,13 @@ This section covers how to automate certificate generation and management using 
 ---
 ## Certificate Automation Workflow
 
-## Certificate Automation Workflow
-
 ```mermaid
 graph TD
     A[Python Script] --> B[Generate RSA Private Key (user.key)]
     B --> C[Create CSR (user.csr)]
-    C --> D[Send to CA (ca.crt & ca.key)]
+    C --> D[Send to CA (ca.crt and ca.key)]
     D --> E[Receive Signed Certificate (user.crt)]
 ```
----
 
 ## Python Automation
 
