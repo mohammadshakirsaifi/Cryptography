@@ -7,10 +7,20 @@ This section covers how to automate certificate generation and management using 
 
 ```mermaid
 graph TD
-    A[Python Script] --> B[Generate RSA Private Key (user.key)]
-    B --> C[Create CSR (user.csr)]
-    C --> D[Send to CA (ca.crt and ca.key)]
-    D --> E[Receive Signed Certificate (user.crt)]
+    A[Python Script] --> B[Generate RSA Key]
+    B --> C[Create CSR]
+    C --> D[Send to CA]
+    D --> E[Receive Signed Certificate]
+```
+### Workflow Explanation:
+
+**1.Python Script** – Runs the automation commands.
+**2. Generate RSA Key** – Produces user.key using OpenSSL.
+**3. Create CSR** – Generates user.csr from the private key.
+**4. Send to CA** – Submit user.csr to your Certificate Authority (ca.crt and ca.key) for signing.
+**5. Receive Signed Certificate** – Receive user.crt from the CA, completing the automation workflow.
+```txt
+💡 Tip: Filenames like user.key, user.csr, ca.crt, and user.crt are referenced in the explanation, but avoid using parentheses or special characters in Mermaid nodes to ensure GitHub renders the diagram correctly.
 ```
 
 ## Python Automation
