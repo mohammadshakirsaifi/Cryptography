@@ -15,6 +15,7 @@ OpenSSL is a command-line toolkit for generating, managing, and inspecting certi
 ```bash
 # Generate a new RSA private key (2048 bits) and a self-signed X.509 certificate valid for 365 days
 openssl req -x509 -newkey rsa:2048 -days 365 -nodes -keyout tls.key -out tls.crt -subj "/CN=localhost"
+```
 
 - -x509 → Create a self-signed X.509 certificate.
 - -newkey rsa:2048 → Generate a new RSA key of 2048 bits.
